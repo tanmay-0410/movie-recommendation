@@ -3,7 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 from starlette.middleware.base import BaseHTTPMiddleware
 from core.config import settings
-from api.routes import auth, movies, users
+from api_v1.routes import auth, movies, users
 import uvicorn
 import traceback
 
