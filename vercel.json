@@ -1,5 +1,15 @@
 {
   "version": 2,
+  "experimentalServices": {
+    "frontend": {
+      "root": "frontend",
+      "framework": "vite"
+    },
+    "backend": {
+      "root": "/",
+      "framework": "fastapi"
+    }
+  },
   "rewrites": [
     {
       "source": "/api/v1/(.*)",
