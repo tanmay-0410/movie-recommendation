@@ -1,15 +1,13 @@
 {
   "version": 2,
-  "experimentalServices": {
-    "frontend": {
-      "root": "frontend",
-      "framework": "vite"
-    },
-    "backend": {
-      "root": "/",
-      "framework": "fastapi"
+  "builds": [
+    { "src": "api/index.py", "use": "@vercel/python" },
+    { 
+      "src": "package.json", 
+      "use": "@vercel/static-build", 
+      "config": { "distDir": "frontend/dist" } 
     }
-  },
+  ],
   "rewrites": [
     {
       "source": "/api/v1/(.*)",
