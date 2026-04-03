@@ -1,6 +1,6 @@
 from fastapi import APIRouter, Depends, HTTPException, status
 from models.user import UserResponse, UserInDB
-from api.deps import get_current_user
+from api_v1.deps import get_current_user
 from db.database import get_database
 from typing import Any
 
