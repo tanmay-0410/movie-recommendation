@@ -43,7 +43,6 @@ const Navbar = () => {
   const navLinks = [
     { to: '/', label: 'Home' },
     { to: '/search', label: 'Explore' },
-    { to: '/watchlist', label: 'Watchlist' },
   ];
 
   return (

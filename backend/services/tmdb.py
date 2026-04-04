@@ -51,7 +51,4 @@ class TMDBService:
     async def get_upcoming(self) -> Dict[str, Any]:
         return await self._get("/movie/upcoming")
 
-    async def get_watch_providers(self, movie_id: int) -> Dict[str, Any]:
-        return await self._get(f"/movie/{movie_id}/watch/providers")
-
 tmdb_service = TMDBService()

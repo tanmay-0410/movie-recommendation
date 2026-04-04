@@ -43,7 +43,3 @@ async def get_now_playing() -> Any:
 @router.get("/category/upcoming")
 async def get_upcoming() -> Any:
     return await tmdb_service.get_upcoming()
-
-@router.get("/{movie_id}/providers")
-async def get_watch_providers(movie_id: int) -> Any:
-    return await tmdb_service.get_watch_providers(movie_id)

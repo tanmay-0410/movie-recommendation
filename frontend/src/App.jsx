@@ -102,18 +102,6 @@ function AnimatedRoutes() {
             </PrivateRoute>
           }
         />
-        <Route
-          path="/watchlist"
-          element={
-            <PrivateRoute>
-              <Suspense fallback={<PageLoader />}>
-                <PageTransition>
-                  <Watchlist />
-                </PageTransition>
-              </Suspense>
-            </PrivateRoute>
-          }
-        />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </AnimatePresence>
